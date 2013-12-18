@@ -3,3 +3,7 @@ cd $1
 curl https://s3.amazonaws.com/psi-tools/mdbtools-0.5.tar.gz -s -O
 mkdir -p vendor
 tar -C vendor -xvf mdbtools-0.5.tar.gz
+
+status "Setting PATH"
+mkdir -p $build_dir/.profile.d
+echo "export PATH=\"\$HOME/vendor/mdbtools/util:\$PATH\"" > $build_dir/.profile.d/mdbtools.sh
