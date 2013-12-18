@@ -1,8 +1,8 @@
-echo "-----> Installing mdbtools 0.5"
+echo "-----> Installing mdbtools 0.7"
 cd $1
-curl https://s3.amazonaws.com/psi-tools/mdbtools-0.5.tar.gz -s -O
+curl https://s3.amazonaws.com/psi-tools/mdbtools-0.7.tar.gz -s -O
 mkdir -p vendor
-tar -C vendor -xvf mdbtools-0.5.tar.gz
+tar -C vendor -xvf mdbtools-0.7.tar.gz
 
 build_dir=$1
 status "Setting PATH"
