@@ -1,6 +1,6 @@
 echo "-----> Installing mdbtools 0.7"
 cd $1
-curl https://s3.amazonaws.com/psi-tools/mdbtools-0.7.tar.gz -s -O
+curl https://s3.amazonaws.com/db-stat/public/mdbtools-0.7.tar.gz -s -O
 mkdir -p vendor
 tar -C vendor -xvf mdbtools-0.7.tar.gz
 
