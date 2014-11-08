@@ -3,5 +3,5 @@
 cat <<EOF
 ---
 config_vars:
-  PATH: $PATH:/app/vendor/mdbtools/util
+  PATH: $PATH:/app/vendor/mdbtools/bin
 EOF
