@@ -1,4 +1,4 @@
-echo "-----> Installing mdbtools 0.7"
+echo "-----> Installing mdbtools 0.7.1"
 cd $1
 curl https://s3.amazonaws.com/mdb-tools/mdbtools-master.tar.bz2 -s -O
 mkdir -p vendor
