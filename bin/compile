@@ -1,8 +1,8 @@
 echo "-----> Installing mdbtools 0.7.0"
 cd $1
 curl https://s3.amazonaws.com/mdb-tools/mdbtools-0-7-0.tar.bz2 -s -O
-mkdir -p vendor
-tar -C vendor -xvjf mdbtools-0-7-0.tar.bz2
+mkdir -p vendor/mdbtools
+tar -C vendor/mdbtools -xvjf mdbtools-0-7-0.tar.bz2
 
 build_dir=$1
 status "Setting PATH"
