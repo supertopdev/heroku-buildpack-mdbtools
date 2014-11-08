@@ -1,10 +1,10 @@
 echo "-----> Installing mdbtools 0.7.1"
 cd $1
-curl https://s3.amazonaws.com/mdb-tools/mdbtools-master.tar.bz2 -s -O
+curl https://s3.amazonaws.com/mdb-tools/mdbtools-0-7-1.tar.bz2 -s -O
 mkdir -p vendor
-tar -C vendor -xvjf mdbtools-master.tar.bz2
+tar -C vendor -xvjf mdbtools-0-7-1.tar.bz2
 
 build_dir=$1
 status "Setting PATH"
 mkdir -p $build_dir/.profile.d
-echo "export PATH=\"\$HOME/vendor/mdbtools-master/src/util:\$PATH\"" > $build_dir/.profile.d/mdbtools.sh
+echo "export PATH=\"\$HOME/vendor/mdbtools/src/util:\$PATH\"" > $build_dir/.profile.d/mdbtools.sh
