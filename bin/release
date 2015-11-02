@@ -1,7 +1,7 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env bash
 
-{
-  "config_vars" => {
-      "PATH" => "$PATH:/app/vendor/mdbtools/bin"
-  }
-}.to_yaml
+cat <<EOF
+---
+config_vars:
+  PATH: "$PATH:/app/vendor/mdbtools/bin"
+EOF
